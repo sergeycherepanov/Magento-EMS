@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @copyright Copyright (c) 2013 Sergey Cherepanov. (http://www.cherepanov.org.ua)
+* @license Creative Commons Attribution 3.0 License
+*/
+-->
+<config>
+    <modules>
+        <Ch_Ems>
+            <version>0.1.0</version>
+        </Ch_Ems>
+    </modules>
+    <global>
+        <models>
+            <ch_ems>
+                <class>Ch_Ems_Model</class>
+                <resourceModel>ch_ems_resource</resourceModel>
+            </ch_ems>
+            <ch_ems_resource>
+                <class>Ch_Ems_Model_Resource</class>
+                <entities>
+                    <ems_region>
+                        <table>directory_country_region_ems</table>
+                    </ems_region>
+                </entities>
+            </ch_ems_resource>
+        </models>
+        <blocks>
+            <ch_ems>
+                <class>Ch_Ems_Block</class>
+            </ch_ems>
+        </blocks>
+        <helpers>
+            <ch_ems>
+                <class>Ch_Ems_Helper</class>
+            </ch_ems>
+        </helpers>
+        <resources>
+            <ch_ems_setup>
+                <setup>
+                    <module>Ch_Ems</module>
+                </setup>
+            </ch_ems_setup>
+        </resources>
+    </global>
+    <default>
+        <carriers>
+            <ch_ems_ru>
+                <active>0</active>
+                <allowspecific>0</allowspecific>
+                <model>ch_ems/carrier_ems_ru</model>
+                <name>EMS Post of Russia</name>
+                <title>EMS Post of Russia</title>
+                <api_uri>http://emspost.ru/api/rest</api_uri>
+            </ch_ems_ru>
+        </carriers>
+    </default>
+</config>

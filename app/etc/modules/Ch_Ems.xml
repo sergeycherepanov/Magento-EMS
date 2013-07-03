@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @copyright Copyright (c) 2013 Sergey Cherepanov. (http://www.cherepanov.org.ua)
+* @license Creative Commons Attribution 3.0 License
+*/
+-->
+<config>
+    <modules>
+        <Ch_Ems>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ch_Ems>
+    </modules>
+</config>
